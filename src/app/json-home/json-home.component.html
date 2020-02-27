@@ -1,0 +1,26 @@
+<div style="overflow-x:auto;">
+    <!-- build table -->
+    <table>
+        <tbody>
+            <tr *ngFor="let x of myjson | keyvalue">
+                <!-- <td>{{ (x.key | number) + ( 1 | number) }}</td> -->
+                <td>{{x.value.orderNumber}}</td>
+                <td>{{x.value.productType}}</td>
+                <td>{{x.value.lenderBranch}}</td>
+                <td>{{x.value.reportName}}</td>
+                <td>{{x.value.camName}}</td>
+                <td>{{x.value.Status}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <div style="padding: 13px;">
+    <div class="json">{{ myjson | json}} </div>
+</div> -->
+
+<!-- loop myjson -->
+<!-- each myjson onject.productType -->
+<!-- <div *ngFor="let item of myjson | keyvalue">
+    {{item.key}} : {{item.value.orderNumber}} - {{item.value.productType}} - {{item.value.lenderBranch}} - {{item.value.reportName}} - {{item.value.camName}} - {{item.value.Status}}
+</div> -->
